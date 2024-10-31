@@ -12,8 +12,11 @@ Version 1.0 changes from [stroopy](https://github.com/marsja/stroopy):
 * Stimuli placing on the screen was broaden to allow long color words, as in Russian
 * Basic Python code for results analysis are provided (stroop_analysis.py)
 * Example of the resulted data made in MST are provided at Data\stroop.csv, results of analyses is on figure below
+  
 t-statistic: 2.7547390745471882
+
 P-value: 0.0066435663474235275
+
 [![overall statistics](MST1.png)]
 [![statistics by color](MST2.png)]
 
