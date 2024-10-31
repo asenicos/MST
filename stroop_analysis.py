@@ -11,8 +11,8 @@ from scipy.stats import ttest_ind
 
 
 #read Stroop test results
-exp='stroop6.csv'
-path='d:\\my_scripts\\py\\stroopy-master\\Data\\'
+exp='stroop.csv'
+path='.\\Data\\'
 os.chdir(path)
 data=pd.read_csv(exp, sep=";")
 means = data.groupby(['congruent', 'Accuracy'])['RT'].mean()
