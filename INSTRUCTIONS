@@ -2,12 +2,11 @@ Swedish
 
 instructionsSTART
 Din uppgift är att så korrekt och snabbt som möjligt avgöra vilken färg ett ord är skrivet med.
-Du för två alternativ, ett på vardera  sida om det färgade ordet.
-Använd X-tangent för vänster, och M-tangent för höger.
+Du för två alternativ, ett på vardera sidan om det färgade ordet.
+Tryck PILEN TILL VÄNSTER på tangentbordet för att välja vänstra svaret och HÖGER för höger. Använd två fingrar av samma hand.
 
 
-
-I exemplet nedan skulle du alltså tryckt på X (vänster), eftersom färgen på mittenordet är grön.
+I exemplet nedan skulle du alltså trycka på VÄNSTER, eftersom färgen på ordet i mitten är grön.
 
 instructionsEND
 
@@ -96,3 +95,52 @@ Incorrect! It is the color not the word
 incorrectEND
 
 EnglishEnd
+
+Russian
+instructionsSTART
+Ваша задача максимально точно и быстро определять цвет предъявляемого слова.
+Надо выбирать из двух вариантов ответа, показанных слева и справа от окрашенного слова.
+Используйте стрелку вправо, если правое слово соответствует цвету и стрелку влево, если правильный ответ слева. Используйте пальцы одной руки для обеих кнопок.
+
+
+
+В примере ниже, вы должны нажать стрелку влево, так как окрашенное слово зелёного цвета.
+instructionsEND
+
+practiceSTART
+Нажмте пробел для начала тренировки с шестью тестовыми предъявлениями перед началом основного теста.
+practiceEND
+
+testSTART
+Отлично!
+
+
+Если у вас есть вопросы, пожалуйста обратитесь к экспериментатору сейчас.
+
+
+Старайтесь отвечать так быстро и точно, как только возможно.
+
+
+Нажмите пробел для начала эксперимента.
+testEND
+
+
+doneSTART
+Эксперимент окончен.
+
+
+Теперь, пожалуйста, позовите экспериментатора.
+
+
+Нажмите пробел для окончания эксперимента.
+doneEND
+
+rightSTART
+Верно!
+rightEND
+
+incorrectSTART
+Неверно! Слово окрашено в другой цвет.
+incorrectEND
+
+RussianEnd
