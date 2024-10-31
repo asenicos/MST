@@ -5,7 +5,7 @@ from fileHandling import *
 
 class Experiment:
     def __init__(self, win_color, txt_color):
-        self.stimuli_positions = [[-.2, 0], [.2, 0], [0, 0]]
+        self.stimuli_positions = [[-.4, 0], [.4, 0], [0, 0]]
         self.win_color = win_color
         self.txt_color = txt_color
 
@@ -19,7 +19,7 @@ class Experiment:
     def settings(self):
         experiment_info = {'Subid': '', 'Age': '', 'Experiment Version': 0.1,
                            'Sex': ['Male', 'Female', 'Other'],
-                           'Language': ['English', 'Swedish'], u'date':
+                           'Language': ['English', 'Swedish', 'Russian'], u'date':
                                data.getDateStr(format="%Y-%m-%d_%H:%M")}
 
         info_dialog = gui.DlgFromDict(title='Stroop task', dictionary=experiment_info,
@@ -60,10 +60,15 @@ class Experiment:
         position = position
         if settings['Language'] == "Swedish":
             text = swedish_task(text)
+        if settings['Language'] == "Russian":
+            text = russian_task(text)
+        
         else:
             text = text
         _stimulus.pos = position
-        _stimulus.setColor(color)
+        if color=='brown' : _stimulus.setColor('#663300')#set opposite color to skyblue
+        elif color=='orange': _stimulus.setColor('darkorange') #set opposite color to lightblue
+        else: _stimulus.setColor(color)
         _stimulus.setText(text)
         return _stimulus
 
@@ -96,7 +101,7 @@ class Experiment:
             alt2.draw()
             window.flip()
 
-            keys = event.waitKeys(keyList=['x', 'm', 'q'])
+            keys = event.waitKeys(keyList=['left', 'right', 'q'])
             resp_time = timer.getTime()
             if testtype == 'practice':
                 if keys[0] != trial['correctresponse']:
@@ -146,8 +151,7 @@ def create_instructions(input, START, END, color="Black"):
     instruction_text = parse_instructions(input, START, END)
     print(instruction_text)
     text_stimuli = visual.TextStim(window, text=instruction_text, wrapWidth=1.2,
-                                   alignHoriz='center', color=color,
-                                   alignVert='center', height=0.06)
+                                   alignText='center', color=color, height=0.06)
 
     return text_stimuli
 
@@ -159,11 +163,14 @@ def display_instructions(start_instruction=''):
         instruction_stimuli['instructions'].pos = (0.0, 0.5)
         instruction_stimuli['instructions'].draw()
 
-        positions = [[-.2, 0], [.2, 0], [0, 0]]
+        positions = [[-.27, 0], [.27, 0], [0, 0]]
         examples = [experiment.create_text_stimuli() for pos in positions]
         example_words = ['green', 'blue', 'green']
         if settings['Language'] == 'Swedish':
             example_words = [swedish_task(word) for word in example_words]
+        if settings['Language'] == 'Russian':
+            example_words = [russian_task(word) for word in example_words]
+
 
         for i, pos in enumerate(positions):
             examples[i].pos = pos
@@ -201,13 +208,57 @@ def swedish_task(word):
         swedish = u"grön"
     elif word == "yellow":
         swedish = "gul"
+    elif word == "brown":
+        swedish = "brun"
+    elif word == "black":
+        swedish = "svart"
+    elif word == "white":
+        swedish = "vit"
+    elif word == "lightblue":
+        swedish = "ljusblå"    
+    elif word == "orange":
+        swedish = "orange"
+    elif word == "magenta":
+        swedish = "lila"
+    elif word == "skyblue":
+        swedish = "himmelsblå"
+    elif word == "cyan":
+        swedish = "blågrön"    
     return swedish
 
 
+def russian_task(word):
+    russian = '+'
+    if word == "blue":
+        russian = u"синий"
+    elif word == "red":
+        russian = u"красный"
+    elif word == "green":
+        russian = u"зелёный"
+    elif word == "yellow":
+        russian = "жёлтый"
+    elif word == "brown":
+        russian = "коричневый"
+    elif word == "black":
+        russian = "чёрный"
+    elif word == "white":
+        russian = "белый"
+    elif word == "lightblue":
+        russian = "голубой"    
+    elif word == "orange":
+        russian = "оранжевый"
+    elif word == "magenta":
+        russian = "пурпурный"
+    elif word == "skyblue":
+        russian = "небесный"
+    elif word == "cyan":
+        russian = "циан"    
+    return russian
+
 if __name__ == "__main__":
-    background = "Black"
+    background = "Gray"
     back_color = (0, 0, 0)
-    textColor = "White"
+    textColor = "Silver"
     # text_color = (1, 1, 1)
     experiment = Experiment(win_color=background , txt_color=textColor)
     settings = experiment.settings()
