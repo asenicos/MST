@@ -13,15 +13,12 @@ Version 1.0 changes from [stroopy](https://github.com/marsja/stroopy):
 * Basic Python code for results analysis are provided (stroop_analysis.py)
 * Example of the resulted data made in MST are provided at Data\stroop.csv, results of analyses is on figure below
   
-t-statistic: 2.7547390745471882
-
-P-value: 0.0066435663474235275
-
 [![overall statistics](MST1.png)]
 [![statistics by color](MST2.png)]
 
-[![IMAGE ALT TEXT HERE](https://i.ytimg.com/vi/re8i-CZwREI/0.jpg)](https://www.youtube.com/watch?v=re8i-CZwREI)
+t-statistic: 2.7547390745471882
 
+P-value: 0.0066435663474235275
 
 ## Instructions
 - [x] English
