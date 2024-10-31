@@ -1,4 +1,4 @@
-# Stroopy
+# Modified Stroop Test (MST)
 A Modified Stroop Test (MST) programmed using PsychoPy, forked from [stroopy](https://github.com/marsja/stroopy) Github project.
 The scope of the project is to make relevant test for [Inverted Spectrum experiment](https://osf.io/ed4sy/), so the stimuli were set as opposite colors. 
 
