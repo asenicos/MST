@@ -14,7 +14,7 @@ Version 1.0 changes from [stroopy](https://github.com/marsja/stroopy):
 * Example of the resulted data made in MST are provided at Data\stroop.csv, results of analyses is on figure below
   
 [![overall statistics](MST1.png)]
-
+[![statistics by color](MST2.png)]
 [![statistics by color grouped](MST3.png)]
 
 Analyzed  144  trials, accuracy is  95.8 %.
