@@ -15,7 +15,7 @@ Version 1.0 changes from [stroopy](https://github.com/marsja/stroopy):
   
 [![overall statistics](MST1.png)]
 [![statistics by color](MST2.png)]
-[![statistics by color](MST3.png)]
+[![statistics by color grouped](MST3.png)]
 
 Analyzed  144  trials, accuracy is  95.8 %.
 Size of Stroop effect is 119.591 +/- 1.243 ms
