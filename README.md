@@ -14,11 +14,13 @@ Version 1.0 changes from [stroopy](https://github.com/marsja/stroopy):
 * Example of the resulted data made in MST are provided at Data\stroop.csv, results of analyses is on figure below
   
 [![overall statistics](MST1.png)]
-[![statistics by color](MST2.png)]
+
 [![statistics by color grouped](MST3.png)]
 
 Analyzed  144  trials, accuracy is  95.8 %.
-Size of Stroop effect is 119.591 +/- 1.243 ms
+
+Size of Stroop effect is 119.591 +/- 1.243 ms.
+
 t-statistic: 2.755, p-value: 0.007
 
 ## Instructions
