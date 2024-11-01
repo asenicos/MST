@@ -23,6 +23,10 @@ Size of Stroop effect is 119.591 +/- 1.243 ms.
 
 t-statistic 3.076, p-value: 0.003
 
+Accuracy for congruent:  98.61%
+
+Accuracy for noncongruent:  93.06 %
+
 ## Instructions
 - [x] English
 - [x] Swedish
