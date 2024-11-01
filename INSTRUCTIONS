@@ -51,11 +51,10 @@ English
 instructionsSTART
 Your task is to as accurately and quickly as possible to determine the color of a presented word.
 You get two options, one on each side of the colored word.
-Use the X button if the right option is the left, and the M-key if right option is to the right.
+Use the LEFT ARROW button if the right option is the left, and the RIGHT ARROW if right option is to the right. Use two fingers of one hand for both buttons.
 
 
-
-In the example below, you would then press the X (left), as the word is presented in the color green.
+In the example below, you would then press LEFT ARROW, as the word is presented in the color green.
 instructionsEND
 
 practiceSTART
@@ -100,11 +99,11 @@ Russian
 instructionsSTART
 Ваша задача максимально точно и быстро определять цвет предъявляемого слова.
 Надо выбирать из двух вариантов ответа, показанных слева и справа от окрашенного слова.
-Используйте стрелку вправо, если правое слово соответствует цвету и стрелку влево, если правильный ответ слева. Используйте пальцы одной руки для обеих кнопок.
+Используйте СТРЕЛКУ ВПРАВО, если правое слово соответствует цвету и СТРЕЛКУ ВЛЕВО, если правильный ответ слева. Используйте пальцы одной руки для обеих кнопок.
 
 
 
-В примере ниже, вы должны нажать стрелку влево, так как окрашенное слово зелёного цвета.
+В примере ниже, вы должны нажать СТРЕЛКУ ВЛЕВО, так как окрашенное слово зелёного цвета.
 instructionsEND
 
 practiceSTART
