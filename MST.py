@@ -252,7 +252,7 @@ def russian_task(word):
     elif word == "skyblue":
         russian = "небесный"
     elif word == "cyan":
-        russian = "циан"    
+        russian = "бирюзовый"    
     return russian
 
 if __name__ == "__main__":
