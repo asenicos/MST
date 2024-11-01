@@ -21,7 +21,7 @@ Analyzed  144  trials, accuracy is  95.8 %.
 
 Size of Stroop effect is 119.591 +/- 1.243 ms.
 
-t-statistic: 2.755, p-value: 0.007
+t-statistic 3.076, p-value: 0.003
 
 ## Instructions
 - [x] English
