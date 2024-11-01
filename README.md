@@ -15,10 +15,11 @@ Version 1.0 changes from [stroopy](https://github.com/marsja/stroopy):
   
 [![overall statistics](MST1.png)]
 [![statistics by color](MST2.png)]
+[![statistics by color](MST3.png)]
 
-t-statistic: 2.7547390745471882
-
-P-value: 0.0066435663474235275
+Analyzed  144  trials, accuracy is  95.8 %.
+Size of Stroop effect is 119.591 +/- 1.243 ms
+t-statistic: 2.755, p-value: 0.007
 
 ## Instructions
 - [x] English
