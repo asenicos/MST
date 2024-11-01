@@ -45,8 +45,8 @@ print("p-value:", round(p_value,3))
 
 #by colors 
 colors =  sorted(pd.unique(pd.Series(data.colour)))
-#sns.catplot(data=data, kind='box', col='colour', x='congruent', y='RT', hue='colour', sharey=True, height=4)    
-sns.boxplot(x = adata['congruent'], y = adata['RT'], hue = sorted(adata['colour']),palette = colors).legend_.remove()
+adata=adata.sort_values('colour')
+sns.boxplot(x = adata['congruent'], y = adata['RT'], hue = adata['colour'],palette = colors).legend_.remove()
 
 #by colors grouped
 sns.set_context("paper", font_scale=0.8)
