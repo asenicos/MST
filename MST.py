@@ -18,9 +18,9 @@ class Experiment:
 
     def settings(self):
         experiment_info = {'Subid': '', 'Age': '', 'Experiment Version': 0.1,
-                           'Sex': ['Male', 'Female', 'Other'],
+                           'Sex': ['Male', 'Female'],
                            'Language': ['English', 'Swedish', 'Russian'], u'date':
-                               data.getDateStr(format="%Y-%m-%d_%H:%M")}
+                               data.getDateStr(format="%Y-%m-%d_%H:%M"),'Inversion':['No', 'Yes']}
 
         info_dialog = gui.DlgFromDict(title='Stroop task', dictionary=experiment_info,
                                       fixed=['Experiment Version'])
@@ -57,6 +57,9 @@ class Experiment:
     def present_stimuli(self, color, text, position, stim):
         _stimulus = stim
         color = color
+        if inversion == 'Yes': 
+            color=get_colour_opposite(color)
+            #print('color: ',get_colour_opposite(color), color)
         position = position
         if settings['Language'] == "Swedish":
             text = swedish_task(text)
@@ -67,7 +70,7 @@ class Experiment:
             text = text
         _stimulus.pos = position
         if color=='brown' : _stimulus.setColor('#663300')#set opposite color to skyblue
-        elif color=='orange': _stimulus.setColor('darkorange') #set opposite color to lightblue
+        elif color=='lightblue': _stimulus.setColor('#0066ff') #set opposite color to orange
         else: _stimulus.setColor(color)
         _stimulus.setText(text)
         return _stimulus
@@ -101,7 +104,7 @@ class Experiment:
             alt2.draw()
             window.flip()
 
-            keys = event.waitKeys(keyList=['left', 'right', 'q'])
+            keys = event.waitKeys(keyList=['left', 'right', 'down', 'q'])
             resp_time = timer.getTime()
             if testtype == 'practice':
                 if keys[0] != trial['correctresponse']:
@@ -123,6 +126,9 @@ class Experiment:
                 trial['Response'] = keys[0]
                 trial['Sub_id'] = settings['Subid']
                 trial['Sex'] = settings['Sex']
+                trial['Date'] = settings['date']
+                trial['inversion']=settings['Inversion']
+                trial['Age']=settings['Age']
                 write_csv(settings[u'DataFile'], trial)
 
             event.clearEvents()
@@ -130,6 +136,23 @@ class Experiment:
             if 'q' in keys:
                 print(f"breaking because keys: {keys}")
                 break
+            
+def get_colour_opposite(colorname):
+    opposite = {
+        "red"     : "cyan", # R
+        "yellow"  : "blue", # Y
+        "green"   : "magenta", # G
+        "blue"    : "yellow", # B
+        "magenta" : "green", # 
+        "skyblue" : "brown", # 
+        "brown"   : "skyblue", # noncanonical
+     "lightblue"  : "orange", # noncanonical
+        "orange"  : "lightblue", # dark orange
+        "cyan"    : "red", # 
+        "black"   : "white", # 
+        "white"   : "black",
+        "Silver"  : "Silver"}
+    return opposite[colorname]
 
 
 def create_instructions_dict(instr):
@@ -165,7 +188,7 @@ def display_instructions(start_instruction=''):
 
         positions = [[-.27, 0], [.27, 0], [0, 0]]
         examples = [experiment.create_text_stimuli() for pos in positions]
-        example_words = ['green', 'blue', 'green']
+        example_words = ['yellow', 'blue', 'yellow']
         if settings['Language'] == 'Swedish':
             example_words = [swedish_task(word) for word in example_words]
         if settings['Language'] == 'Russian':
@@ -179,7 +202,7 @@ def display_instructions(start_instruction=''):
             elif i == 1:
                 examples[1].setText(example_words[i])
             elif i == 2:
-                examples[2].setColor('Green')
+                examples[2].setColor('yellow')
                 examples[2].setText(example_words[i])
 
         [example.draw() for example in examples]
@@ -263,6 +286,7 @@ if __name__ == "__main__":
     experiment = Experiment(win_color=background , txt_color=textColor)
     settings = experiment.settings()
     language = settings['Language']
+    inversion = settings['Inversion']
     instructions = read_instructions_file("INSTRUCTIONS", language, language + "End")
     instructions_dict = create_instructions_dict(instructions)
     instruction_stimuli = {}

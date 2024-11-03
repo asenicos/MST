@@ -3,7 +3,7 @@ Swedish
 instructionsSTART
 Din uppgift är att så korrekt och snabbt som möjligt avgöra vilken färg ett ord är skrivet med.
 Du för två alternativ, ett på vardera sidan om det färgade ordet.
-Tryck PILEN TILL VÄNSTER på tangentbordet för att välja vänstra svaret och HÖGER för höger. Använd två fingrar av samma hand.
+Tryck PILEN TILL VÄNSTER på tangentbordet för att välja vänstra svaret och HÖGER för höger. Använd två fingrar av samma hand. Om det rätta namnet på färgen inte finns varken till vänster eller till höger, tryck PIL NERÅT för att forsätta.
 
 
 I exemplet nedan skulle du alltså trycka på VÄNSTER, eftersom färgen på ordet i mitten är grön.
@@ -52,6 +52,7 @@ instructionsSTART
 Your task is to as accurately and quickly as possible to determine the color of a presented word.
 You get two options, one on each side of the colored word.
 Use the LEFT ARROW button if the right option is the left, and the RIGHT ARROW if right option is to the right. Use two fingers of one hand for both buttons.
+In case the are no right color name at left and right, use DOWN ARROW to continue.
 
 
 In the example below, you would then press LEFT ARROW, as the word is presented in the color green.
@@ -99,7 +100,7 @@ Russian
 instructionsSTART
 Ваша задача максимально точно и быстро определять цвет предъявляемого слова.
 Надо выбирать из двух вариантов ответа, показанных слева и справа от окрашенного слова.
-Используйте СТРЕЛКУ ВПРАВО, если правое слово соответствует цвету и СТРЕЛКУ ВЛЕВО, если правильный ответ слева. Используйте пальцы одной руки для обеих кнопок.
+Используйте СТРЕЛКУ ВПРАВО, если правое слово соответствует цвету и СТРЕЛКУ ВЛЕВО, если правильный ответ слева. Используйте пальцы одной руки для обеих кнопок. Если правильного названия цвета нет ни слева, ни справа, нажмите СТРЕЛКУ ВНИЗ чтобы продолжить.
 
 
 
