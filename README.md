@@ -27,7 +27,7 @@ Accuracy for congruent:  98.61%
 
 Accuracy for noncongruent:  93.06 %
 
-Additional statistics with R:
+### Additional statistics with R:
 
 ![stroop_R_boxplots_w_datapoints](https://github.com/user-attachments/assets/f1c57c35-4eef-468c-a540-9aae2aa46d05)
 ![congruency_by_colors](https://github.com/user-attachments/assets/abed2f54-f50b-458f-a5da-0504b10e987a)
