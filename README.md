@@ -18,7 +18,7 @@ Version 1.0 changes from [stroopy](https://github.com/marsja/stroopy):
 ![stroop_R_boxplots_w_datapoints](https://github.com/user-attachments/assets/10ee4577-5290-4be9-aeb3-ce00f6cf1312)
 ![congruency_by_colors](https://github.com/user-attachments/assets/abed2f54-f50b-458f-a5da-0504b10e987a)
 ![means_sem_bytrials](https://github.com/user-attachments/assets/d60ba044-100b-4713-9d87-2b0a5d080198)
-![accuracy_across_trials](https://github.com/user-attachments/assets/3e06b17d-6b76-4b2d-bec7-936045ead565)
+![accuracy_across_trials](https://github.com/user-attachments/assets/379f6949-8199-4d7d-8bf0-5b0011af0458)
 
 
 
