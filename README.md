@@ -15,11 +15,6 @@ Version 1.0 changes from [stroopy](https://github.com/marsja/stroopy):
   
 [![overall statistics](MST1.png)]
 [![statistics by color](MST2.png)]
-![stroop_R_boxplots_w_datapoints](https://github.com/user-attachments/assets/10ee4577-5290-4be9-aeb3-ce00f6cf1312)
-![congruency_by_colors](https://github.com/user-attachments/assets/abed2f54-f50b-458f-a5da-0504b10e987a)
-![means_sem_bytrials](https://github.com/user-attachments/assets/d60ba044-100b-4713-9d87-2b0a5d080198)
-![accuracy_across_trials](https://github.com/user-attachments/assets/379f6949-8199-4d7d-8bf0-5b0011af0458)
-
 
 
 Analyzed  144  stimuli, accuracy is  95.8 %.
@@ -31,6 +26,13 @@ t-statistic 3.076, p-value: 0.003
 Accuracy for congruent:  98.61%
 
 Accuracy for noncongruent:  93.06 %
+
+![stroop_R_boxplots_w_datapoints](https://github.com/user-attachments/assets/10ee4577-5290-4be9-aeb3-ce00f6cf1312)
+![congruency_by_colors](https://github.com/user-attachments/assets/abed2f54-f50b-458f-a5da-0504b10e987a)
+![means_sem_bytrials](https://github.com/user-attachments/assets/d60ba044-100b-4713-9d87-2b0a5d080198)
+![accuracy_across_trials](https://github.com/user-attachments/assets/379f6949-8199-4d7d-8bf0-5b0011af0458)
+
+
 
 ## Instructions
 - [x] English
