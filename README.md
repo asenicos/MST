@@ -21,7 +21,7 @@ Version 1.0 changes from [stroopy](https://github.com/marsja/stroopy):
 
 
 
-Analyzed  144  trials, accuracy is  95.8 %.
+Analyzed  144  stimuli, accuracy is  95.8 %.
 
 Size of Stroop effect is 119.591 +/- 1.243 ms.
 
