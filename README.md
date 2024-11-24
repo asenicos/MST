@@ -15,8 +15,10 @@ Version 1.0 changes from [stroopy](https://github.com/marsja/stroopy):
   
 [![overall statistics](MST1.png)]
 [![statistics by color](MST2.png)]
-[![statistics by color grouped](MST3.png)]
+![stroop_R_boxplots_w_datapoints](https://github.com/user-attachments/assets/10ee4577-5290-4be9-aeb3-ce00f6cf1312)
 ![congruency_by_colors](https://github.com/user-attachments/assets/abed2f54-f50b-458f-a5da-0504b10e987a)
+![means_sem_bytrials](https://github.com/user-attachments/assets/d60ba044-100b-4713-9d87-2b0a5d080198)
+
 
 
 Analyzed  144  trials, accuracy is  95.8 %.
