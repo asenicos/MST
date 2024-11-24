@@ -31,7 +31,7 @@ Additional statistics with R:
 
 ![stroop_R_boxplots_w_datapoints](https://github.com/user-attachments/assets/f1c57c35-4eef-468c-a540-9aae2aa46d05)
 ![congruency_by_colors](https://github.com/user-attachments/assets/abed2f54-f50b-458f-a5da-0504b10e987a)
-![means_sem_bytrials](https://github.com/user-attachments/assets/47dabaa0-164d-40de-891c-1ffb4e329187)
+![means_sem_bytrials](https://github.com/user-attachments/assets/2fda4072-751b-42df-9e9b-d67987933885)
 ![accuracy_across_trials](https://github.com/user-attachments/assets/379f6949-8199-4d7d-8bf0-5b0011af0458)
 
 
