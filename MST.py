@@ -20,7 +20,7 @@ class Experiment:
         experiment_info = {'Subid': '', 'Age': '', 'Experiment Version': 0.1,
                            'Sex': ['Male', 'Female'],
                            'Language': ['English', 'Swedish', 'Russian'], u'date':
-                               data.getDateStr(format="%Y-%m-%d_%H:%M"),'Inversion':['No', 'Yes']}
+                               data.getDateStr(format="%Y-%m-%d_%H:%M"),'Inversion':['No', 'Yes'],'Trial':''}
 
         info_dialog = gui.DlgFromDict(title='Stroop task', dictionary=experiment_info,
                                       fixed=['Experiment Version'])
@@ -45,7 +45,7 @@ class Experiment:
 
     def create_trials(self, trial_file, randomization='random'):
         '''Doc string'''
-        data_types = ['Response', 'Accuracy', 'RT', 'Sub_id', 'Sex']
+        data_types = ['Response', 'Accuracy', 'RT', 'Sub_id', 'Trial', 'Sex']
         with open(trial_file, 'r') as stimfile:
             _stims = csv.DictReader(stimfile)
             trials = data.TrialHandler(list(_stims), 1,
@@ -129,6 +129,8 @@ class Experiment:
                 trial['Date'] = settings['date']
                 trial['inversion']=settings['Inversion']
                 trial['Age']=settings['Age']
+                trial['Trial']=settings['Trial']
+                
                 write_csv(settings[u'DataFile'], trial)
 
             event.clearEvents()
