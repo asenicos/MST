@@ -190,7 +190,7 @@ def display_instructions(start_instruction=''):
 
         positions = [[-.27, 0], [.27, 0], [0, 0]]
         examples = [experiment.create_text_stimuli() for pos in positions]
-        example_words = ['yellow', 'blue', 'yellow']
+        example_words = ['green', 'magenta', 'green']
         if settings['Language'] == 'Swedish':
             example_words = [swedish_task(word) for word in example_words]
         if settings['Language'] == 'Russian':
@@ -204,7 +204,7 @@ def display_instructions(start_instruction=''):
             elif i == 1:
                 examples[1].setText(example_words[i])
             elif i == 2:
-                examples[2].setColor('yellow')
+                examples[2].setColor('green')
                 examples[2].setText(example_words[i])
 
         [example.draw() for example in examples]
